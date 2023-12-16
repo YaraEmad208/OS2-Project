@@ -17,11 +17,11 @@ public class Word_Stat {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      String s ="C:\\Users\\ahmed\\OneDrive\\Desktop\\New folder (2)\\text2.txt";
-      String[] words;
-       words = s.split("//"); //is space
-        System.out.println(words);
-        System.out.println(s.length());
+//      String s ="C:\\Users\\ahmed\\OneDrive\\Desktop\\New folder (2)\\text2.txt";
+//      String[] words;
+//       words = s.split("//"); //is space
+//        System.out.println(words);
+//        System.out.println(s.length());
     }
     
 }

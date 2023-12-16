@@ -15,8 +15,7 @@ import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 
 public class WordStatRunnable  implements Runnable {
-//    Semaphore sem;
-//    private GUI gui;
+
     private String path;
     private static String longest = "";
     private static String shortest ="this_is_test_string";
@@ -84,7 +83,7 @@ public class WordStatRunnable  implements Runnable {
                         longest = word;
                        
                     }
-                     if(global_shortest.length()<=longest.length()){
+                     if(global_longest.length()<=longest.length()){
                            global_longest=longest;
                         }
 
