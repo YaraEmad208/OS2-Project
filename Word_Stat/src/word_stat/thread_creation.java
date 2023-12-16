@@ -6,9 +6,9 @@ import java.util.concurrent.TimeUnit;
 public class thread_creation {
   
     
-    public static WordStatRunnable createThreads(String path) throws InterruptedException {
+    public static void createThreads(String path) throws InterruptedException {
         List<Thread> threadOfFiles = new ArrayList<>();
-        WordStatRunnable wordStatRunnable = null; // Initialize it to null
+        
 
         Path_get folderCrawler = new Path_get();
         folderCrawler.crawlFold(path);
@@ -16,7 +16,7 @@ public class thread_creation {
         for (String textFileName : folderCrawler.getFiles()) {
             WordStatRunnable t = new WordStatRunnable(textFileName);
             threadOfFiles.add(new Thread(t));
-            wordStatRunnable = t; // Assign the last created WordStatRunnable
+           
         }
 
         for (Thread t : threadOfFiles) {
@@ -33,7 +33,7 @@ public class thread_creation {
 
        
 
-        return wordStatRunnable;
+    
     }
  
 }
