@@ -1,0 +1,3 @@
+our project is a program that is supposed to take a set of pieces and use them to
+form a 4x4 square without any gaps, it should automatically rotate or flip the
+pieces or keep them on their original state to form that perfect 4x4 square.
