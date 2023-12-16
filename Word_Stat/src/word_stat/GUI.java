@@ -253,7 +253,7 @@ public class GUI extends javax.swing.JFrame {
     private void processingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processingActionPerformed
         try {
             // Call the createThreads method in thread_creation class and pass the selected path
-            wordStatRunnable =  thread_creation.createThreads(selectedPath);
+           thread_creation.createThreads(selectedPath);
         } catch (InterruptedException ex) {
             Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
         }
